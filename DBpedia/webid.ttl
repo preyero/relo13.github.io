@@ -1,0 +1,17 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cert: <http://www.w3.org/ns/auth/cert#> .
+@prefix rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<> a foaf:PersonalProfileDocument ;
+   foaf:maker <#this> ;
+   foaf:primaryTopic <#this> .
+
+<#this> a foaf:Person ;
+   foaf:name "Paula Reyero Lobo";
+   cert:key [
+      a cert:RSAPublicKey;
+      rdfs:label "'Generated for DBpedia Databus authentication 2020-12-01'";
+      cert:modulus "d529e165a99d3b35413aa278490d9ca7feca14a57faf68e1c90b6fd8427ce2fbedf18e3dd25e45211953f43ba1eab6752fc70c66a974bac2c0b09b8456caa77883da5c2c5beea4ffe1b43df40bef76fbd3a90c975d2344dddc49f170dda633ce1c29f3e07a49c9999622df105289066ab791d4961ce944daf3af1dfceed1be72c72fca7a75a4ec7aef1e0cdfc9a2cc3066783eb28b67723d776d01188297d4990938f5f20155d4c4558d960648c823a3df71aeff1fa035b7f416253a5093c125791757579e7d73eb13a095e9f7bac1a674b86b6b912ea3ea632d17529a037565ae942effba44f4d1399eee368945187c131d7832ba3d68ed01fc6ef06b13391f"^^xsd:hexBinary;
+      cert:exponent "65537"^^xsd:nonNegativeInteger
+     ] .
